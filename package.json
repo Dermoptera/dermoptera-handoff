@@ -1,0 +1,31 @@
+{
+  "name": "dermoptera-handoff",
+  "version": "0.1.0-beta.1",
+  "description": "Public SDK workspace for encrypted, one-time cross-device state transfer.",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b && tsc -p examples/quote-wizard/tsconfig.json --pretty false && node scripts/build-example.mjs",
+    "typecheck": "tsc -b --pretty false && tsc -p examples/quote-wizard/tsconfig.json --pretty false && tsc -p tsconfig.lint.json --pretty false",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "pack:check": "node scripts/package-audit.mjs"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.0",
+    "@types/qrcode": "1.5.6",
+    "@typescript-eslint/eslint-plugin": "8.70.1",
+    "@typescript-eslint/parser": "8.70.1",
+    "esbuild": "0.25.12",
+    "eslint": "9.39.5",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

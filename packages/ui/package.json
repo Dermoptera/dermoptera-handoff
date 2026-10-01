@@ -1,0 +1,25 @@
+{
+  "name": "@dermoptera/handoff-ui",
+  "version": "0.1.0-beta.1",
+  "description": "Optional QR and replace-confirmation helpers for Dermoptera Handoff.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": ["dist", "README.md", "LICENSE", "THIRD_PARTY_NOTICES.md"],
+  "engines": { "node": ">=20" },
+  "keywords": ["qr-code", "state-transfer", "cross-device", "web-crypto"],
+  "homepage": "https://dermoptera.work/docs/",
+  "repository": { "type": "git", "url": "git+https://github.com/dermoptera/handoff.git", "directory": "packages/ui" },
+  "bugs": { "url": "https://github.com/dermoptera/handoff/security/advisories/new" },
+  "publishConfig": { "access": "public" },
+  "dependencies": {
+    "qrcode": "1.5.4"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@dermoptera/handoff",
+  "version": "0.1.0-beta.1",
+  "description": "Client-side encrypted, one-time cross-device state transfer for web apps.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "keywords": ["state-transfer", "cross-device", "web-crypto", "aes-gcm", "qr-code", "forms", "checklists"],
+  "homepage": "https://dermoptera.work/docs/",
+  "repository": { "type": "git", "url": "git+https://github.com/dermoptera/handoff.git", "directory": "packages/core" },
+  "bugs": { "url": "https://github.com/dermoptera/handoff/security/advisories/new" },
+  "publishConfig": { "access": "public" }
+}
